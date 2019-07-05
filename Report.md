@@ -1,7 +1,7 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Project
-Joe Udacity  
-December 31st, 2050
+João Pedro Conte Sobrinho
+July 5st, 2019
 
 ## I. Definition
 _(approx. 1-2 pages)_
