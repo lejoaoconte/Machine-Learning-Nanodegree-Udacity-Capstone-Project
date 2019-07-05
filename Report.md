@@ -5,6 +5,7 @@ João Pedro Conte Sobrinho
 July 5st, 2019
 
 ## I. Definition
+This project it's a project about deep learning methold of computer vision where we use this concept to 
 _(approx. 1-2 pages)_
 
 ### Project Overview
