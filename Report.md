@@ -5,7 +5,12 @@ João Pedro Conte Sobrinho
 July 5st, 2019
 
 ## I. Definition
-This project it's a project about deep learning methold of computer vision where we use this concept to 
+This project it's about a deep learning method more specifically of computer vision where we use this concept to understand and generate a model which will interpret the American Sign Language (ASL) for use in futures occasion to real time translate this language to speaking language.
+
+As we already speak, the ASL is an important method of communication for deaf community in United States and in part of Canada. It's a very complex visual-spatial language, where all movements it's important and represents something [1].
+
+Very colleges and universities are beginning recognize the ASL as a cultural and important language to study [2]. Nevertheless we have a large quantity of people which not have knowledge of this language and sometimes think it's a mimicry or thing in this kind, but it's not. 
+
 _(approx. 1-2 pages)_
 
 ### Project Overview
