@@ -11,9 +11,13 @@ As we already speak, the ASL is an important method of communication for deaf co
 
 Very colleges and universities are beginning recognize the ASL as a cultural and important language to study [2]. Nevertheless we have a large quantity of people which not have knowledge of this language and sometimes think it's a mimicry or thing in this kind, but it's not. 
 
-_(approx. 1-2 pages)_
+Like was said in first paragraph the mainly idea of this project is create a recognition system for ASL, however for all language it would being very hard get the data, so with the ASL letters' database found in Kaggle could solve the problem.
+
+Was found some problems in the way, but this will be discussed over this report.
 
 ### Project Overview
+
+
 In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
 - _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
 - _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
