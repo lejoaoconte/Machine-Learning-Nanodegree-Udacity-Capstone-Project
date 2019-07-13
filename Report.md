@@ -17,7 +17,6 @@ Was found some problems in the way, but this will be discussed over this report.
 
 ### Project Overview
 
-
 In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
 - _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
 - _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
