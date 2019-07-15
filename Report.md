@@ -16,10 +16,19 @@ Like was said in first paragraph the mainly idea of this project is create a rec
 Was found some problems in the way, but this will be discussed over this report.
 
 ### Project Overview
+This project involve concepts about deep learning, or to be more specific this project it will using the computer vision to understand and classification the simple gestures using to communication of American Sign Language.
 
-In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
+This problem surged when we saw the big number of people at deaf community that need comunicate and the big number of peoples which not know about ASL and can't comunicate with the deaf community, isolating them of the majority population. 
+
+To using the concepts of deep learning will need much datas and this datas it's available on Kaggle platform, that a platform of competitions and practices of machine and deep learning.
+
+Basicaly the concept of the project it will br use this datas to create a good model to recognition of the gestures of ASL. This model it's based on idea which suppose that if the people can undertand a gesture of ASL the computer can understand too.
+
+How to evaluate the model and how the model it's understand the images will be explained forward.
+
+<!--In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
 - _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
-- _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
+- _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_-->
 
 ### Problem Statement
 In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
