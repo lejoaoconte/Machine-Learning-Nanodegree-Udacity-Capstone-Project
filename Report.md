@@ -31,6 +31,16 @@ How to evaluate the model and how the model it's understand the images will be e
 - _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_-->
 
 ### Problem Statement
+As was said in the proposal, the mainly problem of this project is the recognition and the image processing, this problem will required the concepts of deep learning which can be learn this on extracurricular part of nanodegree. This concepts of neural networks, image processing, and other are treated in this part of course and this generate a good base for solve the problem.
+
+Basicaly it will be use a library to create the neural network, and after it the datas are pass to this library and it will helping to create the model based on concepts of NN.
+
+Explaining quickly we will pass the datas from the library which will create a convolutional neural network (CNN) model, this type of neural network it's good to analyze images because it will seen only the mainly parts of the figure, like it's ilustrate in image below.
+
+![CNN](images/cnn.jpeg "Convolutional Neural Network")
+
+In lay terms, ehat is illustrated in the image is a CNN where we have the convolutional layers which are layers where it's extract the parts with more relevance in the image and after it the CNN transform the final image generate in the vector which is pass to the NN fully connect that it will generate the model. The image was extract from [this blog post](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53).
+
 In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
 - _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
 - _Have you thoroughly discussed how you will attempt to solve the problem?_
