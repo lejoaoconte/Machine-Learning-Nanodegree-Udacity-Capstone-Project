@@ -87,7 +87,70 @@ As was said the dataset composed of 87,000 images and all images have the same s
 - _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_-->
 
 ### Exploratory Visualization
+The exploration and visualization of the data was did in notebook in Jupyter and can be seen below:
 
+Let's start import the libraries which will be used for processing, import and visualization of dataset.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import random, cv2, os, re
+```
+Now will seen the number of classes and the classes itself with this we can see the number of classes is 29, like as expected, and each classes as said before.
+
+```python
+path = '../dados/'
+list_path = sorted(os.listdir(path))
+number_classes = len(list_path)
+
+print("Amount of data: "+str(number_classes))
+print("Classes of data: "+str(list_path))
+```
+
+    Amount of data: 29
+    Classes of data: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'del', 'nothing', 'space']
+
+Here let's plot some data for visualization.
+
+```python
+def plot():
+    plt.figure(figsize = (20, 20))
+    
+    for i in range(1, 30):
+        imgs = path + list_path[i-1] + '/' + list_path[i-1] +'1.jpg'
+        plt.subplot(5, 6, i)
+        plt.imshow(cv2.imread(imgs))
+        plt.title("Sign of "+str(list_path[i-1]))
+        plt.xticks([])
+        plt.yticks([])
+plot()
+```
+![png](images/output_5_0.png)
+
+and here we will get the number of datas in each path.
+
+```python
+number_in_list = []
+
+for i in list_path:
+    image_path = path + i
+    letter = os.listdir(image_path)
+    number_images = len(letter)
+    number_in_list.append(number_images)
+    
+number_in_list = np.array(number_in_list)
+```
+
+finally, let's plot it:
+
+```python
+plt.figure(figsize = (15, 5))
+plt.bar(list_path, number_in_list, align='center', alpha=0.5)
+plt.ylabel("Amount of images in each path")
+plt.title('Amount of image')
+```
+
+![png](images/output_9_1.png)
 
 <!--In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
 - _Have you visualized a relevant characteristic or feature about the dataset or input data?_
