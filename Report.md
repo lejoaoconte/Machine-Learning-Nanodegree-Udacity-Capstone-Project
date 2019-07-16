@@ -47,11 +47,20 @@ In lay terms, ehat is illustrated in the image is a CNN where we have the convol
 - _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_-->
 
 ### Metrics
+In the used library has some metrics which can be used to measure performance of a model and like defined in the library itself a metric is a function that is used to judge the performance of the model.
 
+With this when the model is compiled the metrics are define and in this case the metric that was use it's accuracy. Like can be see in this part of the code:
 
-In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project. These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:
+```python
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=["accuracy"])
+```
+Basically the metrics of the model are calculate in all iteration and return the accuracy of the model. It's important to emphasize that the accuracy it's not use to train the model, only to say th accuracy it's good or not, for this model the good accuracy is greater or equal than 80%.
+
+The input of the metrics method is the predictions label and the output is a single tensor value representing the mean of the output array across all datapoints. The accuracy is categorical because have more than one data of output. 
+
+<!--In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project. These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:
 - _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_
-- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_
+- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_-->
 
 
 ## II. Analysis
