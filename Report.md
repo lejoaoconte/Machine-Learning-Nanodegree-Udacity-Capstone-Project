@@ -64,14 +64,23 @@ The input of the metrics method is the predictions label and the output is a sin
 
 
 ## II. Analysis
-_(approx. 2-4 pages)_
+<!--_(approx. 2-4 pages)_-->
+In this section let's see more closely the analysis of the datas, exploring the dataset and the algorithm that was used.
 
 ### Data Exploration
-In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
+As was said in the proposal, the database of images of ASL Alphabet is a database of images of American Sign Language, where have a group of images containing the letters of ASL.
+
+This dataset was lifted up in the Kaggle, basically the Kaggle is a website where we have many datasets that can use in personal projects to train or in conpetitions in platform itself.
+
+The images of dataset compose 87,000 images with 200x200 pixels, and this images was divided in 29 classes, of which 26 are for the letters A-Z, and the others 3 are for the SPACE, DELETE and NOTHING, and this classes are for very helpful in real time application, which are very useful in this application. Below, we can see a example of the ASL Alphabet.
+
+![CNN](images/asl.jpg "ASL Alphabet")
+
+<!--In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
 - _If a dataset is present for this problem, have you thoroughly discussed certain features about the dataset? Has a data sample been provided to the reader?_
 - _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_
 - _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_
-- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_
+- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_-->
 
 ### Exploratory Visualization
 In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
