@@ -76,6 +76,10 @@ The images of dataset compose 87,000 images with 200x200 pixels, and this images
 
 ![CNN](images/asl.jpg "ASL Alphabet")
 
+You can find the dataset [click on this link](https://www.kaggle.com/grassknoted/asl-alphabet).
+
+As was said the dataset composed of 87,000 images and all images have the same size. To each image we have a train dataset with 3,000 images, or in other words each letter or word have 3,000 images to train. Could increase dataset create more images, but as the library used have this option of generate data it was not necessary.
+
 <!--In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
 - _If a dataset is present for this problem, have you thoroughly discussed certain features about the dataset? Has a data sample been provided to the reader?_
 - _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_
