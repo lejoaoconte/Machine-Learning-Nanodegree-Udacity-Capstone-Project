@@ -152,7 +152,7 @@ plt.title('Amount of image')
 
 ![png](images/output_9_1.png)
 
-This notebook can be seen [click on this link](https://github.com/lejoaoconte/Machine-Learning-Nanodegree-Udacity-Capstone-Project/blob/master/explorer_Of_Datas.ipynb).
+This notebook can be seen [click on this link](https://github.com/lejoaoconte/Machine-Learning-Nanodegree-Udacity-Capstone-Project/blob/master/notebooks/explorer_Of_Datas.ipynb).
 
 <!--In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
 - _Have you visualized a relevant characteristic or feature about the dataset or input data?_
