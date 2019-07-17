@@ -76,7 +76,7 @@ The images of dataset compose 87,000 images with 200x200 pixels, and this images
 
 ![CNN](images/asl.jpg "ASL Alphabet")
 
-You can find the dataset [click on this link](https://www.kaggle.com/grassknoted/asl-alphabet).
+You can find the dataset [click on this link](https://www.kaggle.com/grassknoted/asl-alphabet) [3].
 
 As was said the dataset composed of 87,000 images and all images have the same size. To each image we have a train dataset with 3,000 images, or in other words each letter or word have 3,000 images to train. Could increase dataset create more images, but as the library used have this option of generate data it was not necessary.
 
@@ -160,7 +160,15 @@ This notebook can be seen [click on this link](https://github.com/lejoaoconte/Ma
 - _If a plot is provided, are the axes, title, and datum clearly defined?_-->
 
 ### Algorithms and Techniques
+The algorithm that was used don't have any special characteristic, it's a simple algorithm which is used to do a neural network with the libraries and specific APIs. The concepts of programming that's used are struct and object orientation programming.
 
+So as was said the neural network used is the convolutional neural network. This type of neural network analyse the main points of the image, this concept emerge from the idea of brain's visual cortex.
+
+Define the concept of convolution layer like the book of Géron [3]: the convolutional layer is the most important building block of a CNN, the neurons in the first convolutional layer are not connected to every single pixel in the input image, but only to pixels in their receptive fields like the image bellow (image from book [3]).
+
+![cnn](images/cn2.png)
+
+In turn, each neuron in the second convolutional layer is connected only to neurons located within a small rectangle in the first layer. This architecture allows the network to concentrate on small low-level features in the first hidden layer, then assemble them into larger higher-level features in the next hidden layer, and so on. This hierarchical structure is common in real-world images, which is one of the reasons why CNNs work so well for image recognition.[4]
 
 <!--In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics of the problem and the problem domain. Questions to ask yourself when writing this section:
 - _Are the algorithms you will use, including any default variables/parameters in the project clearly defined?_
@@ -246,6 +254,18 @@ This notebook can be seen [click on this link](https://github.com/lejoaoconte/Ma
 
 ### Improvement
 
+## VI. Bibliography References
+
+[1] About American Sign Language – Deaf Resorce Library
+http://www.deaflibrary.org/asl.html
+
+[2] ASL as a Foreign Language Fact Sheet – University of New Mexico
+http://www.unm.edu/~wilcox/UNM/facts.html
+
+[3] Kaggle Dataset of ASL Alphabet
+https://www.kaggle.com/grassknoted/asl-alphabet
+
+[4] Hands-On Machine Learning with Scikit-Learn & Tensorflow, Aurélien Géron. First edition, O'Reilly.
 
 <!--In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and compared/contrasted to your current solution. Questions to ask yourself when writing this section:
 - _Are there further improvements that could be made on the algorithms or techniques you used in this project?_
