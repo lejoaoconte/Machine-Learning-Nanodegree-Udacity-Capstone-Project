@@ -189,7 +189,9 @@ In the simple analyse which was did in other kernels on the Kaggle [3] it was se
 <!--_(approx. 3-5 pages)_-->
 
 ### Data Preprocessing
+First of all it was thought in do a preprocessing of datas, applying some redefinitions on the figures, but it's didn't worked well and not help in the accuracy of the model.
 
+With this, at first it was defined that not necessary a data preprocessing and the images was passed to the model just with the rescale, but the same form which were downloaded.
 
 <!--In this section, all of your preprocessing steps will need to be clearly documented, if any were necessary. From the previous section, any of the abnormalities or characteristics that you identified about the dataset will be addressed and corrected here. Questions to ask yourself when writing this section:
 - _If the algorithms chosen require preprocessing steps like feature selection or feature transformations, have they been properly documented?_
