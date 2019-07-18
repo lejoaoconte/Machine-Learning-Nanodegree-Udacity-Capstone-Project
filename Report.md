@@ -693,6 +693,13 @@ The final solution can be testing with others images to get a better understandi
 
 ### Improvement
 
+
+<!--In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and compared/contrasted to your current solution. Questions to ask yourself when writing this section:
+- _Are there further improvements that could be made on the algorithms or techniques you used in this project?_
+- _Were there algorithms or techniques you researched that you did not know how to implement, but would consider using if you knew how?_
+- _If you used your final solution as the new benchmark, do you think an even better solution exists?_-->
+
+
 ## VI. Bibliography References
 
 [1] About American Sign Language – Deaf Resorce Library
@@ -705,11 +712,6 @@ http://www.unm.edu/~wilcox/UNM/facts.html
 https://www.kaggle.com/grassknoted/asl-alphabet
 
 [4] Hands-On Machine Learning with Scikit-Learn & Tensorflow, Aurélien Géron. First edition, O'Reilly.
-
-<!--In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and compared/contrasted to your current solution. Questions to ask yourself when writing this section:
-- _Are there further improvements that could be made on the algorithms or techniques you used in this project?_
-- _Were there algorithms or techniques you researched that you did not know how to implement, but would consider using if you knew how?_
-- _If you used your final solution as the new benchmark, do you think an even better solution exists?_-->
 
  -----------
 
