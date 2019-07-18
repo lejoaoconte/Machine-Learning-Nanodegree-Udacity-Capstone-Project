@@ -675,7 +675,11 @@ The final solution can be testing with others images to get a better understandi
 <!--_(approx. 1-2 pages)_-->
 
 ### Free-Form Visualization
+Was generated other forms of data to see the model acting and how can be seen below the classification it's good even with this dataset.
 
+![png](images/new_data.png)
+
+How we can see the model predict 22 of 29 images, that represent a percent of 75,89% that is very close of accuracy of model. This is happen because the datasets it was not trained with datas in this forms, but with the images passed in RGB form. It's result in bias for the RBG data, or in other words, if we pass the datas in RGB form the model will predict better.
 
 <!--In this section, you will need to provide some form of visualization that emphasizes an important quality about the project. It is much more free-form, but should reasonably support a significant result or characteristic about the problem that you want to discuss. Questions to ask yourself when writing this section:
 - _Have you visualized a relevant or important quality about the problem, dataset, input data, or results?_
@@ -683,7 +687,11 @@ The final solution can be testing with others images to get a better understandi
 - _If a plot is provided, are the axes, title, and datum clearly defined?_-->
 
 ### Reflection
+Summarizing the project we can say that the project it's basically the creation of neural network model to predict images passed to it, and the main difficulty which was found was exactly how create this model and this took a some weeks studing the concept in the extracurricular grade.
 
+The more interesting aspect of the project it's exactly the results and how to get there, including an understanding of model and where it could be better, it was all make a very interesting challenge.
+
+Answering the last question of this part of that section, the final model and solution fits my expectations for the problem, and should it be used in a general setting to solve these types of problems.
 
 <!--In this section, you will summarize the entire end-to-end problem solution and discuss one or two particular aspects of the project you found interesting or difficult. You are expected to reflect on the project as a whole to show that you have a firm understanding of the entire process employed in your work. Questions to ask yourself when writing this section:
 - _Have you thoroughly summarized the entire process you used for this project?_
@@ -693,6 +701,13 @@ The final solution can be testing with others images to get a better understandi
 
 ### Improvement
 
+First of all, maybe the algorithm could be more clean, maybe, and just maybe, if we drop some layers the model does not will decrease the accuracy and the code stay more clean.
+
+But this is not important for the problem, to solve the problem of accuracy, which is very high, but can be better, we can add any preprocessing in the images, even before import the images with the imageDataGenerator, we can add some datas with the keras API or preprocessing with the openCV APIs or others in other libraries, helping in the accuracy and decrease the overfitting for on type of data.
+
+In general, I believe that add more layers in the model will not help improve the accuracy, but maybe adjusting some parameters, like learning rate, and other, the model could be better, in the general.
+
+To finish, it's a good model, further because the accuracy it's very high to the second fitting.
 
 <!--In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and compared/contrasted to your current solution. Questions to ask yourself when writing this section:
 - _Are there further improvements that could be made on the algorithms or techniques you used in this project?_
