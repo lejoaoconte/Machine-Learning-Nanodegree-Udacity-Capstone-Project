@@ -510,7 +510,17 @@ model.save_weights('model_h5.h5')
 - _Was there any part of the coding process (e.g., writing complicated functions) that should be documented?_-->
 
 ### Refinement
+One of refinement that was used to improve the model was add more layers, but in firstly this was not good, because the model had the same number of filters in each layer, but increasing the number of filters in each layer made the model had better accuracy.
 
+Other refinement that was done its add the maxpooling and dropout layers, this layers improve the accuracy of model too. Speaking about the dropout first, it taked the hidden layers and drop a quantity of output units, this help for reducing overfitting in neural networks. We can summary this technique on image below.
+
+![dropout](images/dropout.png)
+
+Already the maxpooling's technique reduce the dimension of the data, or in other words, it get the max value of each neuron to pass to next layer like it's illustrate in image below.  
+
+![maxpooling](images/maxpooling.png)
+
+And finally was resized the weights of image, to train the neural network with values between 0 than 1. It's to get a final weights more fit.
 
 <!--In this section, you will need to discuss the process of improvement you made upon the algorithms and techniques you used in your implementation. For example, adjusting parameters for certain models to acquire improved solutions would fall under the refinement category. Your initial and final solutions should be reported, as well as any significant intermediate results as necessary. Questions to ask yourself when writing this section:
 - _Has an initial solution been found and clearly reported?_
