@@ -178,7 +178,7 @@ With this, the input of CNN are the images and the output, for this case, is a v
 - _Is it made clear how the input data or datasets will be handled by the algorithms and techniques chosen?_-->
 
 ### Benchmark
-
+In the simple analyse which was did in other kernels on the Kaggle [3] it was seen that the classifications have accuracy on average of 80% using others arquetectures of CNN. That's all using the same dataset.
 
 <!--In this section, you will need to provide a clearly defined benchmark result or threshold for comparing across performances obtained by your solution. The reasoning behind the benchmark (in the case where it is not an established result) should be discussed. Questions to ask yourself when writing this section:
 - _Has some result or value been provided that acts as a benchmark for measuring performance?_
