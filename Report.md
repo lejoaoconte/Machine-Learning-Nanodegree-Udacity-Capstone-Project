@@ -532,7 +532,125 @@ And finally was resized the weights of image, to train the neural network with v
 <!--_(approx. 2-3 pages)_-->
 
 ### Model Evaluation and Validation
+Below we have the code to validation the model.
 
+
+First of all, let's import the libraries which will be used.
+
+
+```python
+import numpy as np # Linear algebra
+import matplotlib.pyplot as plt # Plots
+import random, cv2, os, re # Read and generate datas
+from tensorflow.keras.preprocessing import image # Read datas for model
+from tensorflow.keras.models import model_from_json #For read model
+```
+
+Now, let's define some parameters
+
+
+```python
+path = '../dados_test/' # Path of test datas
+list_path = sorted(os.listdir(path)) # Get archives sorted
+number_classes = len(list_path) # Get number of classes
+
+print("Amount of data: "+str(number_classes))
+print("Classes of data: "+str(list_path))
+```
+
+    Amount of data: 29
+    Classes of data: ['A_test.jpg', 'B_test.jpg', 'C_test.jpg', 'D_test.jpg', 'E_test.jpg', 'F_test.jpg', 'G_test.jpg', 'H_test.jpg', 'I_test.jpg', 'J_test.jpg', 'K_test.jpg', 'L_test.jpg', 'M_test.jpg', 'N_test.jpg', 'O_test.jpg', 'P_test.jpg', 'Q_test.jpg', 'R_test.jpg', 'S_test.jpg', 'T_test.jpg', 'U_test.jpg', 'V_test.jpg', 'W_test.jpg', 'X_test.jpg', 'Y_test.jpg', 'Z_test.jpg', 'del_test.jpg', 'nothing_test.jpg', 'space_test.jpg']
+
+
+Below it's the function that return the letter which was recognized
+
+
+```python
+def alpha(argument):
+    switcher = {
+        0: "A",
+        1: "B",
+        2: "C",
+        3: "D",
+        4: "E",
+        5: "F",
+        6: "G",
+        7: "H",
+        8: "I",
+        9: "J",
+        10: "K",
+        11: "L",
+        12: "M",
+        13: "N",
+        14: "O",
+        15: "P",
+        16: "Q",
+        17: "R",
+        18: "S",
+        19: "T",
+        20: "U",
+        21: "V",
+        22: "W",
+        23: "X",
+        24: "Y",
+        25: "Z",
+        26: "del",
+        27: "nothing",
+        28: "space",
+    }
+    return switcher.get(argument, "Invalid value")
+```
+
+Get the model
+
+
+```python
+arquivo = open('model_json.json', 'r') # Open the json model
+struct = arquivo.read() # Read the model
+arquivo.close() # Close the model
+
+model = model_from_json(struct) # Read the json archive
+model.load_weights('model_h5.h5') # Pass the weights to the model
+```
+
+The prediction function
+
+
+```python
+def prediction():
+    plt.figure(figsize = (20, 20)) # Define the figure
+    
+    for i in range(1, 30):
+        result = [] # Vector of results
+        imgs = path + list_path[i-1] # Get a image
+        
+        test_image = image.load_img(imgs, target_size=(64, 64)) # Load image to predict
+        test_image = image.img_to_array(test_image) # Convert image to array
+        test_image = np.expand_dims(test_image, axis=0) #Expand the dimension of image
+
+        pred = model.predict_on_batch(test_image) # Make prediction
+        result.append(pred) # Get values
+
+        result = np.asarray(result) # Define the vector of result as array
+        imprime = np.array(result[0][0]) # Call the function of letter
+
+        letter_result = alpha(imprime.argmax()) # Get the letter result
+        
+        letter = list_path[i-1].split("_")[0] # Get the letter of image
+        
+        plt.subplot(5, 6, i) # Define subplots
+        # Plot
+        plt.imshow(cv2.imread(imgs))
+        plt.title("Sign of "+str(letter)+"\nIt's recognized the letter: "+str(letter_result))
+        plt.xticks([])
+        plt.yticks([])
+prediction()
+```
+![png](images/output_9_0.png)
+
+How could be seen the model did good predictions, as we had the accuracy of 81.50% in final epoch and the model predict 26 of 29 classes (or 86.66%), this means that the prediction acted good for the datas that was passed.
+
+With this we can say that the model is robust enough for the problem and trusted too, because this was one of any other tests that can be done.
 
 <!--In this section, the final model and any supporting qualities should be evaluated in detail. It should be clear how the final model was derived and why this model was chosen. In addition, some type of analysis should be used to validate the robustness of this model and its solution, such as manipulating the input data or environment to see how the model’s solution is affected (this is called sensitivity analysis). Questions to ask yourself when writing this section:
 - _Is the final model reasonable and aligning with solution expectations? Are the final parameters of the model appropriate?_
@@ -541,7 +659,11 @@ And finally was resized the weights of image, to train the neural network with v
 - _Can results found from the model be trusted?_-->
 
 ### Justification
+The results found is very close of benchmark established in the section previous, with the benchmark of 80% and a model with 81,5% of accuracy, the model is 1,5% better than benchmark.
 
+In other words the model it's good for this solution and can be used for recognize que simple symbols of ASL, like discussed when proposing the problem.
+
+The final solution can be testing with others images to get a better understanding of the results, and the results have remained close than 80%.
 
 <!--In this section, your model’s final solution and its results should be compared to the benchmark you established earlier in the project using some type of statistical analysis. You should also justify whether these results and the solution are significant enough to have solved the problem posed in the project. Questions to ask yourself when writing this section:
 - _Are the final results found stronger than the benchmark result reported earlier?_
